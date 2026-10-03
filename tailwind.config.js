@@ -14,11 +14,11 @@ export default {
           300: '#93c5fd',
           400: '#60a5fa',
           500: '#3b82f6',
-          600: '#2563eb', // Primary royal blue
-          700: '#1d4ed8',
-          800: '#1e40af',
-          900: '#1e3a8a',
-          950: '#172554',
+          600: '#494685', // Primary royal blue #2563eb old
+          700: '#3f3c70ff',
+          800: '#2a294dff',
+          900: '#1c1c33ff',
+          950: '#10101bff',
         },
         accent: {
           red: '#e11d48',

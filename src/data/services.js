@@ -240,10 +240,10 @@ export const faqsData = [
     question: "Do you provide on-site inspection and free quotation in Jaipur?",
     answer: "Yes, absolutely! We offer professional on-site security surveys in Jaipur and across Rajasthan. Our project engineers evaluate your property, calculate optimal camera angles to eliminate blind spots, check cable routing feasibility, and provide an itemized system plan with zero obligation."
   },
-  {
-    question: "Can I view the CCTV camera live feed on my mobile phone from anywhere in the world?",
-    answer: "Yes! All Sony Vision IP cameras, XVRs, and NVRs feature P2P Cloud and Static IP support. We configure the official mobile applications (such as ICSee, XMeye, Secueye) on your smartphones (iPhone & Android) and tablets, allowing you to watch live high-definition video, hear real-time audio, receive motion alerts, and review past recorded footage from anywhere with internet connectivity."
-  },
+  // {
+  //   question: "Can I view the CCTV camera live feed on my mobile phone from anywhere in the world?",
+  //   answer: "Yes! All Sony Vision IP cameras, XVRs, and NVRs feature P2P Cloud and Static IP support. We configure the official mobile applications (such as ICSee, XMeye, Secueye) on your smartphones (iPhone & Android) and tablets, allowing you to watch live high-definition video, hear real-time audio, receive motion alerts, and review past recorded footage from anywhere with internet connectivity."
+  // },
   {
     question: "What if I don't have WiFi or broadband internet at my location (farmhouse, construction site)?",
     answer: "We offer dedicated 4G SIM and Solar Powered PTZ surveillance solutions! Our Solar 4G PTZ cameras feature high-efficiency 9.5W solar panels, built-in rechargeable battery banks, and 4G SIM slots that connect directly via Jio, Airtel, Vi, or BSNL. They require zero external wiring or WiFi and operate 100% autonomously."
@@ -256,10 +256,10 @@ export const faqsData = [
     question: "Do you provide Annual Maintenance Contracts (AMC) and repair for existing CCTV setups?",
     answer: "Yes. Our team of 25+ certified technicians and 5 project engineers provides comprehensive preventive maintenance, emergency troubleshooting, lens cleaning, hard drive health audits, and AMC packages. We also upgrade existing legacy analog systems to high-definition 4MP IP cameras."
   },
-  {
-    question: "What prestigious projects has Sony Vision executed?",
-    answer: "Sony Vision has executed major enterprise and public infrastructure security projects, including the high-security Stadium Commissioning & Hardware Integration for international cricket matches (ODI-2010 and IPL-2010), extensive inter-state Bus Depot & Transport Fleet monitoring systems, Railway Station surveillance, large industrial warehouses, multi-specialty hospitals, and academic campuses."
-  },
+  // {
+  //   question: "What prestigious projects has Sony Vision executed?",
+  //   answer: "Sony Vision has executed major enterprise and public infrastructure security projects, including the high-security Stadium Commissioning & Hardware Integration for international cricket matches (ODI-2010 and IPL-2010), extensive inter-state Bus Depot & Transport Fleet monitoring systems, Railway Station surveillance, large industrial warehouses, multi-specialty hospitals, and academic campuses."
+  // },
   {
     question: "What is the warranty and after-sales support policy?",
     answer: "All Sony Vision camera hardware and NVRs come with comprehensive manufacturer warranty and dedicated after-sales support. We have an in-house technical equipment lab in Shastri Nagar, Jaipur, and 5 dedicated mobile installation teams ready to attend to service calls promptly."

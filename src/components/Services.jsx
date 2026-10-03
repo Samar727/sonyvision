@@ -7,7 +7,7 @@ export default function Services({ onOpenQuote }) {
       id: "home",
       title: "Home & Villa CCTV",
       desc: "Protect your family and property 24/7 with crystal clear night vision cameras and mobile intercom.",
-      image: "/images/ip_dome_pro.jpg",
+      image: "/images/houseCamera.png",
       icon: Home,
       tag: "Residential"
     },
@@ -15,7 +15,7 @@ export default function Services({ onOpenQuote }) {
       id: "office",
       title: "Office CCTV Installation",
       desc: "Monitor workspaces, reception, entry gates, and server rooms with integrated biometric attendance.",
-      image: "/images/technician_install.jpg",
+      image: "/images/officeCamera.png",
       icon: Building2,
       tag: "Corporate"
     },
@@ -23,7 +23,7 @@ export default function Services({ onOpenQuote }) {
       id: "retail",
       title: "Shop & Retail CCTV",
       desc: "Prevent inventory shrinkage, monitor cash counters with audio recording, and oversee store footfall.",
-      image: "/images/ip_bullet_pro.jpg",
+      image: "/images/shopCamera.png",
       icon: Store,
       tag: "Commercial"
     },
@@ -31,7 +31,7 @@ export default function Services({ onOpenQuote }) {
       id: "school",
       title: "School & College CCTV",
       desc: "Ensure student safety across campus perimeters, hallways, playgrounds, and school transport buses.",
-      image: "/images/hero_surveillance.jpg",
+      image: "/images/school.png",
       icon: GraduationCap,
       tag: "Institutional"
     },
@@ -39,7 +39,7 @@ export default function Services({ onOpenQuote }) {
       id: "warehouse",
       title: "Factory & Warehouse CCTV",
       desc: "Long-range 36x optical zoom PTZ speed domes and perimeter beam sensors for high-ceiling storage yards.",
-      image: "/images/ptz_speed_dome.jpg",
+      image: "/images/warehouse.png",
       icon: Warehouse,
       tag: "Industrial"
     },
@@ -47,7 +47,7 @@ export default function Services({ onOpenQuote }) {
       id: "remote",
       title: "Remote Mobile App Setup",
       desc: "Watch live feeds, hear audio, and review recordings on iPhone, Android, and tablets from anywhere in the world.",
-      image: "/images/control_room.jpg",
+      image: "/images/remoteAccess.png",
       icon: Smartphone,
       tag: "Smart Access"
     }
@@ -80,14 +80,14 @@ export default function Services({ onOpenQuote }) {
           </button>
         </div>
 
-        {/* 6 Services Grid */}
+        {/* 6 Services Grid with Pixel-Perfect Height Alignment */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {serviceCards.map((srv) => {
             const Icon = srv.icon;
             return (
               <div
                 key={srv.id}
-                className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-card-hover transition-all duration-300 flex flex-col justify-between group"
+                className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-card-hover transition-all duration-300 flex flex-col justify-between group h-full"
               >
                 <div>
                   {/* Photo Banner */}
@@ -109,10 +109,10 @@ export default function Services({ onOpenQuote }) {
                       <Icon className="w-4 h-4" />
                     </div>
 
-                    <h3 className="text-base font-bold text-slate-900 mb-1.5 group-hover:text-brand-600 transition-colors">
+                    <h3 className="text-base font-bold text-slate-900 mb-1.5 min-h-[26px] group-hover:text-brand-600 transition-colors">
                       {srv.title}
                     </h3>
-                    <p className="text-xs text-slate-600 leading-relaxed">
+                    <p className="text-xs text-slate-600 leading-relaxed min-h-[48px]">
                       {srv.desc}
                     </p>
                   </div>

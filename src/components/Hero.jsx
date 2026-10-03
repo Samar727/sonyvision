@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, MessageSquare, ShieldCheck, Users, Tag, Headphones, Clock, Settings, ArrowRight } from 'lucide-react';
+import { Calendar, MessageSquare, ShieldCheck, Users, Tag, Headphones, Clock, Settings, ArrowRight, Sparkles, CheckCircle2 } from 'lucide-react';
 import { companyInfo } from '../data/companyInfo';
 
 export default function Hero({ onOpenQuote }) {
@@ -12,45 +12,65 @@ export default function Hero({ onOpenQuote }) {
         {/* Background Panoramic Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/jaipur_dome_hero.jpg"
+            src="/images/jaipur_hero_clean.jpg"
             alt="CCTV Installation in Jaipur - Sony Vision"
-            className="w-full h-full object-cover object-right md:object-center"
+            className="w-full h-full object-cover object-right lg:object-center"
           />
-          {/* Deep dark gradient on left for crystal clear contrast */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/85 to-transparent w-full lg:w-2/3 z-10" />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-black/40 z-10" />
+          {/* Smooth dark vignette on the left half to guarantee razor-sharp contrast */}
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-transparent w-full lg:w-3/5 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent z-10" />
         </div>
 
-        {/* Hero Content Container */}
-        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 w-full">
+        {/* Hero Content Container - Left Aligned with Natural Padding */}
+        <div className="relative z-20 w-full px-6 sm:px-10 lg:px-16 xl:px-20 py-12 lg:py-16">
           <div className="max-w-2xl text-left space-y-4">
             
-            {/* Top Kicker */}
-            <div className="text-[11px] sm:text-xs font-extrabold tracking-widest text-slate-300 uppercase">
-              SAFE HOMES | SECURE BUSINESSES | SMARTER TOMORROW
+            {/* Top Eyebrow Badge */}
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/80 text-[10px] sm:text-xs font-bold tracking-wider text-slate-200 uppercase backdrop-blur-md shadow-inner">
+              <span className="w-2 h-2 rounded-full bg-accent-red animate-pulse shrink-0" />
+              <span>Safe Homes</span>
+              <span className="text-slate-600">•</span>
+              <span>Secure Businesses</span>
+              <span className="text-slate-600">•</span>
+              <span className="text-amber-400 font-extrabold">Smarter Tomorrow</span>
             </div>
 
-            {/* Main Headline */}
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight leading-[1.05] uppercase">
-              CCTV INSTALLATION <br />
-              <span className="text-accent-red">IN JAIPUR</span>
+            {/* Main 2-Line Headline with Gradient & Highlighted Text */}
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.08] uppercase">
+              <span>CCTV INSTALLATION</span> <br />
+              <span className="bg-gradient-to-r from-red-500 via-rose-500 to-amber-400 bg-clip-text text-transparent drop-shadow-sm">
+                IN JAIPUR
+              </span>
             </h1>
 
-            {/* Subheadings */}
-            <div className="space-y-1 pt-1">
-              <h2 className="text-base sm:text-xl font-bold text-white leading-snug">
-                Secure Your Home or Business with Trusted CCTV Installation
+            {/* Subheadings with Highlighted Key Phrases */}
+            <div className="space-y-2 pt-1">
+              <h2 className="text-base sm:text-xl font-bold text-slate-100 leading-snug">
+                Secure Your <span className="text-amber-400 font-extrabold">Home</span> or <span className="text-amber-400 font-extrabold">Business</span> with Trusted CCTV Installation
               </h2>
-              <p className="text-xs sm:text-sm text-slate-300 font-medium">
-                Wireless &amp; HD CCTV Cameras | Fast Installation | Free Site Visit
-              </p>
+
+              {/* Highlighted Feature Pills */}
+              <div className="flex flex-wrap items-center gap-2 pt-1">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-900/85 text-cyan-300 border border-slate-700/80 text-xs font-semibold backdrop-blur-sm shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0" />
+                  Wireless &amp; HD CCTV Cameras
+                </span>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-900/85 text-emerald-300 border border-slate-700/80 text-xs font-semibold backdrop-blur-sm shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0" />
+                  Fast Installation
+                </span>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-900/85 text-amber-300 border border-slate-700/80 text-xs font-semibold backdrop-blur-sm shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0" />
+                  100% Free Site Visit
+                </span>
+              </div>
             </div>
 
             {/* Dual CTA Buttons */}
-            <div className="pt-4 flex flex-wrap items-center gap-3">
+            <div className="pt-3 flex flex-wrap items-center gap-3">
               <button
                 onClick={() => onOpenQuote()}
-                className="px-6 py-3.5 bg-accent-red hover:bg-accent-redHover text-white text-xs sm:text-sm font-bold rounded-lg shadow-cta transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"
+                className="px-6 py-3.5 bg-accent-red hover:bg-accent-redHover text-white text-xs sm:text-sm font-bold rounded-xl shadow-cta transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"
               >
                 <Calendar className="w-4 h-4" />
                 <span>Book Free Site Visit →</span>
@@ -60,7 +80,7 @@ export default function Hero({ onOpenQuote }) {
                 href="https://wa.me/919414081702?text=Hello%20Sony%20Vision,%20I%20would%20like%20to%20book%20a%20free%20site%20inspection%20and%20quote%20for%20CCTV%20installation%20in%20Jaipur."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-3.5 bg-black/90 hover:bg-black text-white text-xs sm:text-sm font-bold rounded-lg border border-white/20 shadow-md transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"
+                className="px-5 py-3.5 bg-slate-900/90 hover:bg-slate-900 text-white text-xs sm:text-sm font-bold rounded-xl border border-slate-700 shadow-md transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2 backdrop-blur-sm"
               >
                 <MessageSquare className="w-4 h-4 text-emerald-400" />
                 <span>WhatsApp Us</span>
@@ -68,10 +88,10 @@ export default function Hero({ onOpenQuote }) {
             </div>
 
             {/* 4 Trust Icons Row (Below Buttons) */}
-            <div className="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-4 text-slate-200 border-t border-slate-800/80">
+            <div className="pt-5 grid grid-cols-2 sm:grid-cols-4 gap-4 text-slate-200 border-t border-slate-800/80">
               
               <div className="flex items-center gap-2">
-                <ShieldCheck className="w-5 h-5 text-accent-red shrink-0" />
+                <ShieldCheck className="w-4 h-4 text-accent-red shrink-0" />
                 <div className="text-xs leading-tight">
                   <span className="font-bold text-white block">Genuine Products</span>
                   <span className="text-[10px] text-slate-400">Make in India</span>
@@ -79,7 +99,7 @@ export default function Hero({ onOpenQuote }) {
               </div>
 
               <div className="flex items-center gap-2">
-                <Users className="w-5 h-5 text-accent-red shrink-0" />
+                <Users className="w-4 h-4 text-accent-red shrink-0" />
                 <div className="text-xs leading-tight">
                   <span className="font-bold text-white block">Expert Technicians</span>
                   <span className="text-[10px] text-slate-400">25+ In-House</span>
@@ -87,7 +107,7 @@ export default function Hero({ onOpenQuote }) {
               </div>
 
               <div className="flex items-center gap-2">
-                <Tag className="w-5 h-5 text-accent-red shrink-0" />
+                <Tag className="w-4 h-4 text-accent-red shrink-0" />
                 <div className="text-xs leading-tight">
                   <span className="font-bold text-white block">Affordable Pricing</span>
                   <span className="text-[10px] text-slate-400">Direct Brand</span>
@@ -95,7 +115,7 @@ export default function Hero({ onOpenQuote }) {
               </div>
 
               <div className="flex items-center gap-2">
-                <Headphones className="w-5 h-5 text-accent-red shrink-0" />
+                <Headphones className="w-4 h-4 text-accent-red shrink-0" />
                 <div className="text-xs leading-tight">
                   <span className="font-bold text-white block">Complete Support</span>
                   <span className="text-[10px] text-slate-400">24/7 Mobile App</span>
@@ -109,7 +129,7 @@ export default function Hero({ onOpenQuote }) {
 
       </section>
 
-      {/* 2. Bottom 4-Column Feature / Metric Strip (Exact replica from reference) */}
+      {/* 2. Bottom 4-Column Feature / Metric Strip (Directly below hero banner) */}
       <div className="bg-white border-b border-slate-200 py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
